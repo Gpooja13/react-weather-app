@@ -56,7 +56,7 @@ function App() {
 
         return setWeather(weather);
       } else {
-        // alert("City not found");
+        alert("City not found");
       }
     } catch (e) {
       console.log(e);
@@ -65,7 +65,7 @@ function App() {
 
   useEffect(() => {
     fetchApi();
-  }, [curweather]);
+  }, [city]);
 
   return (
     <>
