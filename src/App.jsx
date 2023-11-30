@@ -64,7 +64,9 @@ function App() {
   };
 
   useEffect(() => {
-    fetchApi();
+   if (city !== "") {
+      fetchApi();
+    }
   }, [city]);
 
   return (
