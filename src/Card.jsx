@@ -79,7 +79,7 @@ const Card = ({ curweather }) => {
   useEffect(() => {
     changeIcon();
     getDate();
-  }, [time, main, timezone]);
+  }, [main]);
 
   return (
     <>

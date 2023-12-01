@@ -15,13 +15,13 @@ function App() {
     setText(name);
   };
 
-  const getcity = async () => {
+  const getcity = () => {
     if (!text) {
       alert("Enter city name");
     } else {
-      await setCity(text);
-      await fetchApi();
-      await setText("");
+      setCity(text);
+      fetchApi();
+      setText("");
   };
 }
 
@@ -56,7 +56,7 @@ function App() {
 
         return setWeather(weather);
       } else {
-        // alert("City not found");
+        alert("City not found");
       }
     } catch (e) {
       console.log(e);
@@ -65,7 +65,7 @@ function App() {
 
   useEffect(() => {
     fetchApi();
-  }, [curweather]);
+  }, [city]);
 
   return (
     <>
