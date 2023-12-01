@@ -63,9 +63,9 @@ function App() {
     }
   };
 
-  // useEffect(() => {
-  //   fetchApi();
-  // }, []);
+  useEffect(() => {
+    fetchApi();
+  }, []);
  
   return (
     <>
