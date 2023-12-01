@@ -64,8 +64,15 @@ function App() {
   };
 
   useEffect(() => {
+<<<<<<< HEAD
     fetchApi();
   }, [city]);
+=======
+   if (city !== "") {
+      fetchApi();
+    }
+  }, []);
+>>>>>>> b4508d35edd33306f4eef090d2a556d9b1313a1b
 
   return (
     <>
