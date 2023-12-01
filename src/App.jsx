@@ -67,7 +67,7 @@ function App() {
    if (city !== "") {
       fetchApi();
     }
-  }, [city]);
+  }, []);
 
   return (
     <>
