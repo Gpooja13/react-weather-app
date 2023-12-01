@@ -65,9 +65,8 @@ function App() {
 
   useEffect(() => {
     fetchApi();
-  }, [city]);
+  }, []);
  
-
   return (
     <>
       <div className="mainDiv">
