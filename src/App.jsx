@@ -15,12 +15,12 @@ function App() {
     setText(name);
   };
 
-  const getcity = () => {
+  const getcity = async() => {
     if (!text) {
       alert("Enter city name");
     } else {
-      setCity(text);
-      fetchApi();
+      await setCity(text);
+      await fetchApi();
       setText("");
   };
 }
